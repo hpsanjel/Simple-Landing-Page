@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+        <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+		<title>Abstract Practice - Hari Sanjel</title>
+        <style type="text/css">
+            .container {
+            margin:0 auto !important;
+            }
+        </style>
+        <script src="index.js"></script>
+	</head>
+	<body>
+		<div class="container h-screen rounded-md mx-auto">
+          
+			<nav class="navbar  sticky top-0 h-auto bg-[#000000] text-white flow-root px-20 py-5">
+				<div class="navleft flex items-center gap-2 float-left">
+                        <img src="logo.png" alt="Logo here" class="logo rounded-md w-5 h-5 hover:opacity-90" />
+                        <p class="text-md lg:text-lg lg:border-r pr-4 hover:opacity-90">Abstract</p>
+					    <p class="hidden lg:flex">Help Center</p>
+				</div>
+                <div class="lg:hidden">
+                    <button class="text-white text-2xl focus:outline-none float-right" id="menuToggle">
+                        <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                        </svg>
+                    </button>
+                </div>
+    
+				<div class="hidden lg:flex lg:gap-4 lg:float-right" id="menuItems">
+					<button type="button" class="border border-outline rounded-md px-3 h-7">Submit a request</button>
+					<button type="button" class="bg-[#4C5FD5] rounded-md px-3 h-7 hover:text-black hover:bg-white hover:transition-all hover:ease-in-out delay-75">Sign in</button>
+				</div>
+			</nav>
+            <nav class="navbar h-auto bg-amber-700 text-white flow-root px-20 py-0.5"></nav>
+
+
+			<section class="hero bg-[#dadbf1] flex flex-col items-center align-middle gap-6 py-20">
+				<div class="hero-help">
+					<p class="lg:text-6xl md:text-5xl sm:text-4xl max-w-lg font-sans">How can we help?</p>
+				</div>
+                <div class="search-bottom flex items-center">
+                    <form role="search">
+                        <input type="text" id="searchInput" placeholder="Search" class="rounded-sm shadow-md px-2 h-10 w-96"></input>
+                        <!-- <button type="button" id="searchButton" class="bg-[#4C5FD5] rounded-md px-3 h-7 text-white">Search</button>
+                        <div id="searchResults"></div> -->
+                        
+                    </form>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+                    </svg>
+                      
+                </div>
+			</section>
+
+            <section class="services bg-white lg:p-16 lg:grid lg:grid-cols-3 lg:gap-2 md:p-8 md:grid md:grid-cols-2 md:gap:2 sm:p-8 sm:grid sm:grid-cols-1">
+                <div class="service flex gap-8 p-12">
+                    <div class="service-logo">
+                        <img src="https://theme.zdassets.com/theme_assets/2197739/aed6500f4da41c641f3de5d96247eb6654e9c386.png" class="w-24"/>
+                    </div>
+                    <div class="service-info">
+                        <p class="text-lg font-bold pb-2">Using Abstract</p>
+                        <p class="mb-4">Abstract Branches lets you manage, version, and document your designs in
+                            one place.</p>
+                        <a href="#" target="_blank"  class="text-xs flex items-center gap-2 text-[#4C5FD5]">Learn More
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                              </svg>    
+                        </a>                          
+                        
+
+                    </div>
+                </div>
+
+                <div class="service flex gap-8 p-12">
+                    <div class="service-logo">
+                        <img src="https://theme.zdassets.com/theme_assets/2197739/91588b3d042df901d9b941ccbb57af4f151401c7.png" class="w-24"/>
+
+                    </div>
+                    <div class="service-info">
+                        <p class="text-lg font-bold pb-2">Manage your account</p>
+                        <p class="mb-4">Configure your account settings, such as your email, profile details, and password.</p>
+                        <a href="#" target="_blank"  class="text-xs flex items-center gap-2 text-[#4C5FD5]">Learn More
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                              </svg>    
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="service flex gap-8 p-12">
+                    <div class="service-logo">
+                        <img src="https://theme.zdassets.com/theme_assets/2197739/50d0db451c0e1e66e1caddd142986fcf6792ca05.png" class="w-24"/>
+
+                    </div>
+                    <div class="service-info">
+                        <p class="text-lg font-bold pb-2">Manage organizations, teams, and projects</p>
+                        <p class="mb-4">Use Abstract organizations, teams, and projects to organize your people and your
+                            work.</p>
+                            <a href="#" target="_blank"  class="text-xs flex items-center gap-2 text-[#4C5FD5]">Learn More
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                                  </svg>    
+                            </a>
+
+                    </div>
+                </div>
+
+                <div class="service flex gap-8 p-12">
+                    <div class="service-logo">
+                        <img src="https://theme.zdassets.com/theme_assets/2197739/3e82d0126e97d7b7c60a611d4e11b3c278d33743.png" class="w-12"/>
+
+                    </div>
+                    <div class="service-info">
+                        <p class="text-lg font-bold pb-2">Manage billing</p>
+                        <p class="mb-4">Change subscriptions and payment
+                            details.</p>
+                            <a href="#" target="_blank"  class="text-xs flex items-center gap-2 text-[#4C5FD5]">Learn More
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                                  </svg>    
+                            </a>
+
+                    </div>
+                </div>
+
+                <div class="service flex gap-8 p-12">
+                    <div class="service-logo">
+                        <img src="https://theme.zdassets.com/theme_assets/2197739/7712592465ef5c7bf18f1c7cb16e19ab44eb81e3.png" class="w-24"/>
+
+                    </div>
+                    <div class="service-info">
+                        <p class="text-lg font-bold pb-2">Authenticate to Abstract</p>
+                        <p class="mb-4">Set up and configure SSO, SCIM, and
+                            Just-in-Time provisioning.</p>
+                            <a href="#" target="_blank"  class="text-xs flex items-center gap-2 text-[#4C5FD5]">Learn More
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="w-6 h-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                                  </svg>    
+                            </a>
+
+                    </div>
+                </div>
+
+                <div class="service flex gap-8 p-12">
+                    <div class="service-logo">
+                        <img src="https://theme.zdassets.com/theme_assets/2197739/dcc25d18e224d12621d74e545cc8bdd1b5685ca8.png" class="w-12"/>
+
+                    </div>
+                    <div class="service-info">
+                        <p class="text-lg font-bold pd-2">Abstract support</p>
+                        <p class="mb-4">Get in touch with a human.</p>
+                        <a href="#" target="_blank"  class="text-xs flex items-center gap-2 text-[#4C5FD5]">Learn More
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1" stroke="currentColor" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+                              </svg>    
+                        </a>
+
+                    </div>
+                </div>
+            </section>
+            <footer>
+            <section class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 justify-center bg-black text-white">
+                <div class="footer-column m-12">
+                    <h1 class="pb-2">Abstract</h1>
+                    <ul class="text-xs leading-5">
+                        <li><a href="#" class="hover:underline pb-4"> Start Trial</a></li>
+                        <li><a href="#" class="hover:underline pb-4"> Pricing</a></li>
+                        <li><a href="#" class="hover:underline pb-4"> Download</a></l>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-column m-12">
+                        <h1 class="pb-2">Resources</h1>
+                        <ul class="text-xs leading-5">
+                            <li><a href="#" class="hover:underline pb-4"> Blog</a></li>
+                            <li><a href="#" class="hover:underline pb-4"> Help Center</a></li>
+                            <li><a href="#" class="hover:underline pb-4"> Release Notes</a></l>
+                            <li><a href="#" class="hover:underline pb-4"> Status</a></l>
+                        </ul>
+                </div>
+
+                <div class="footer-column m-12">
+                    <h1 class="pb-2">Resources</h1>
+                    <ul class="text-xs leading-5">
+                            <li><a href="#" class="hover:underline pb-4"> Twitter</a></li>
+                            <li><a href="#" class="hover:underline pb-4"> LinkedIn</a></li>
+                            <li><a href="#" class="hover:underline pb-4"> Facebook</a></l>
+                            <li><a href="#" class="hover:underline pb-4"> Dribble</a></l>
+                            <li><a href="#" class="hover:underline pb-4"> Podcast</a></l>
+                        
+                    </ul>
+                </div>
+
+                <div class="footer-column m-12">
+                    <h1 class="pb-2">Resources</h1>
+                    <ul class="text-xs leading-5">
+                            <li><a href="#" class="hover:underline pb-4"> About Us</a></l>
+                            <li><a href="#" class="hover:underline pb-4"> Careers</a></l>
+                            <li><a href="#" class="hover:underline pb-4"> Legal</a></l>
+                    
+                        <h1 class="pb-2 pt-6 text-sm">Contact Us</h1>
+                        <li>info@abstract.com</li>
+                        
+                    </ul>
+                </div>
+
+                <div class="footer-column m-12 col-span-2 lg:pt-36 md:pt-5 sm:pt-5">
+					<img src="logo.png" alt="Logo here" class="logo rounded-md w-5 h-5 mb-4" />
+                    <ul class="text-xs">
+                        <li>&copy; Copyright 2023</li>
+                        <li>Abstract Studio Design, Inc.</li>
+                        <li>All rights reserved</li>                        
+                    </ul>
+                </div>
+
+                
+            </section>
+            <div class="help flex flex-row-reverse gap-2 text-white bg-[#4C5FD5] w-20 p-1 pr-3 rounded-2xl text-xs fixed bottom-5 right-20 m-5">
+                <button type="button">Help</button>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9 5.25h.008v.008H12v-.008z" />
+                </svg>
+                  
+            </div>
+        </footer>
+      
+          
+		</div>
+	</body>
+</html>
